@@ -1,0 +1,18 @@
+name: flutter_sqlite
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+resolution: workspace
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0-162.1.beta
+dependencies:
+  flutter:
+    sdk: flutter
+  sqlite:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:

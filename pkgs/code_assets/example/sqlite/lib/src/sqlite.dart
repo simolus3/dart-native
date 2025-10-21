@@ -11,3 +11,11 @@ String get version {
   final nativeString = sqlite3_libversion();
   return nativeString.cast<Utf8>().toDartString();
 }
+
+/// Initializes internal SQLite structures.
+void initialize() {
+  final rc = sqlite3_initialize();
+  if (rc != 0) {
+    throw Exception('sqlite3_initialize() returned $rc');
+  }
+}

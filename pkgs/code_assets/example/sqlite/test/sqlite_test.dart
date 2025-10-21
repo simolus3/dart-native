@@ -6,6 +6,8 @@ import 'package:sqlite/sqlite.dart';
 import 'package:test/test.dart';
 
 void main() {
+  test('initialize', initialize);
+
   test('version', () {
     expect(version, equals('3.50.4'));
   });

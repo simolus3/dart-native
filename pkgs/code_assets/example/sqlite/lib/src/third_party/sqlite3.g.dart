@@ -13,3 +13,6 @@ import 'dart:ffi' as ffi;
 
 @ffi.Native<ffi.Pointer<ffi.Char> Function()>()
 external ffi.Pointer<ffi.Char> sqlite3_libversion();
+
+@ffi.Native<ffi.Int Function()>()
+external int sqlite3_initialize();
