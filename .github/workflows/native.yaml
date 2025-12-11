@@ -20,7 +20,7 @@ on:
       - "pkgs/repo_lint_rules/**"
       - "tool/**"
   push:
-    branches: [main]
+    branches: [main, android-home-testing]
     paths:
       - ".github/workflows/native.yaml"
       - "pkgs/code_assets/**"
