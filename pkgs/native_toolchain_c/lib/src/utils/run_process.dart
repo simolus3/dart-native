@@ -87,6 +87,7 @@ Future<RunProcessResult> runProcess({
       arguments,
       "Full command string: '$commandString'.\n"
       "Exit code: '$exitCode'.\n"
+      'Output: $stdoutBuffer, $stderrBuffer'
       'For the output of the process check the logger output.',
     );
   }
